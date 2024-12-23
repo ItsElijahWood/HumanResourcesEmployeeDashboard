@@ -1,6 +1,3 @@
-# DB's
-./include/loginDB.php
-
 # Editor's
 .vs
 .vscode
