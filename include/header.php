@@ -15,7 +15,7 @@
   <div class="header">
     <img class="headerLogo" src="/EmployeeSystemHR/assets/img/logo.png"/>
     <p class="headerText">
-      Manage Dashboard |
+      <?php echo isset($pageTitle) ? htmlspecialchars($pageTitle) : "Dashboard" ?> |
     </p>
     <p id="time"><?php echo $time; ?></p>
     <img class="headerProfileIcon" src="/EmployeeSystemHR/assets/img/profilelogo.png" />

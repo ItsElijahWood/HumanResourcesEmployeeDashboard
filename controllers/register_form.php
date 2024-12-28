@@ -14,7 +14,7 @@
     }
 
     $sql = "SELECT id FROM users WHERE username = ?";
-    $stmt = $mysqli->prepare($sql)
+    $stmt = $mysqli->prepare($sql);
     $stmt->bind_param('s', $user);
     $stmt->execute();
     $stmt->store_result();

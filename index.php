@@ -1,3 +1,7 @@
+<?php
+  include("./include/session.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +11,12 @@
   <link rel="icon" href="./assets/img/logo.png" type="image/png">
 </head>
 <body>
-   <?php include("./include/header.php") ?> 
+  <?php include("./include/header.php"); ?> 
+  <?php if (isset($user)): ?>
+    <a href="/EmployeeSystemHR/public/login.php">Press me</a>
+    <a href="./controllers/log_out.php">Log out</a>
+  <?php else: ?>
+    <p>Not logged in</p>
+  <?php endif; ?>
 </body>
 </html>
