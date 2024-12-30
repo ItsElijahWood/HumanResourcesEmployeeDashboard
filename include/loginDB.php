@@ -1,4 +1,5 @@
 <?php
+  // Local database accessed from private ip
   $host = "localhost";
   $user = "ElijahWood";
   $pass = "UL!niz(+6P*S7Fm";
@@ -10,5 +11,5 @@
     die("Conn failed: " . $conn->connect_error);
   } 
 
-  return $conn
+  return $conn;
 ?>
